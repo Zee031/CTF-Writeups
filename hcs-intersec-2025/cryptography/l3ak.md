@@ -4,8 +4,34 @@ description: 'Challenge author: etern1ty'
 
 # L3AK
 
-This challenge gave me 2 files to work with packed into a zip file. After extracting the files, I first took a look at the chall.py which contains the encryption script.
+This challenge gave me 2 files to work with, chall.py and output.txt
 
-<figure><img src="../../.gitbook/assets/L3AK_chall.py.png" alt=""><figcaption></figcaption></figure>
+```python
+from Crypto.Util.number import *
+with open('flag.txt') as f:
+    flag = f.read().strip()
 
-The 'what' variable immediately caught my attention as&#x20;
+p = getPrime(512)
+q = getPrime(512)
+n = p * q
+phi = (p - 1) * (q - 1)
+
+e = 65537
+d = inverse(e, phi)
+what = d % (p - 1)
+
+ct = pow(bytes_to_long(flag.encode()), e, n)
+with open('output.txt', 'w') as f:
+    f.write(f'n = {n}\n')
+    f.write(f'ct = {ct}\n')
+    f.write(f'what = {what}\n')
+```
+
+```
+n = 132424945097525850654214822436841749617596013766516589461846053019923921509419349878188173267137393388564369574894943951802964034938666342594121858359017467945336230806773103437033058400722533249173019431218833060574032187854004778243330232248639993250668984287478087484530899867973181768171106834615858816947
+ct = 8690256152525015206584791844752543379719744787620368046544606811870676380837374553817755653019413372016870108768104936568432345008226950086769230094097164464486596908050930851678115904352532562944170575365724833300330295692157262447360439786705110831106538310141401194897207768598781335529794463310318530218
+what = 4701066001566933468539295457165541117336002410834834617743586840140912396231299819496271034686173752299173098904260222360140687146281504574213995930648721
+
+```
+
+From the chall.py file, the what variable, which contains d mod (p-1) is printed out, which is what would be used to find the p.

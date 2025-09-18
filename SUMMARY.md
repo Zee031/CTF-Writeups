@@ -14,6 +14,7 @@
 * [Digital Forensics](hcs-intersec-2025/digital-forensics/README.md)
   * [atadatem](hcs-intersec-2025/digital-forensics/atadatem.md)
   * [Blind File](hcs-intersec-2025/digital-forensics/blind-file.md)
+  * [I Forgot Something](hcs-intersec-2025/digital-forensics/i-forgot-something.md)
 * [OSINT](hcs-intersec-2025/osint/README.md)
   * [guessr 1](hcs-intersec-2025/osint/guessr-1.md)
   * [guessr 2](hcs-intersec-2025/osint/guessr-2.md)
