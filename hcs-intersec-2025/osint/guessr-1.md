@@ -22,6 +22,6 @@ At first, I thought of looking up for police stations around the area of the cir
 
 Eventually I found it East of the circuit with the helmet replica situated near the entrance to the circuit.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/guessr1_flag.png" alt=""><figcaption></figcaption></figure>
 
 Flag: HCS{s0\_wh3n\_w45\_7h3\_l457\_71m3\_f3rr4r1\_w0n\_7h3\_wcc?}

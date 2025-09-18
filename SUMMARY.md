@@ -16,5 +16,6 @@
 * [OSINT](hcs-intersec-2025/osint/README.md)
   * [guessr 1](hcs-intersec-2025/osint/guessr-1.md)
   * [guessr 2](hcs-intersec-2025/osint/guessr-2.md)
+  * [guessr 3](hcs-intersec-2025/osint/guessr-3.md)
 * [Misc](hcs-intersec-2025/misc/README.md)
   * [Wordle](hcs-intersec-2025/misc/wordle.md)
