@@ -270,4 +270,9 @@ if __name__ == "__main__":
 
 ```
 
-The solver first acquires the IV and encrypted blocks C1 and C2. First the solver recovers P2 by using a padding oracle attack which is done by forging the previous ciphertext block and testing the byte values one at a time through option 2 of the instance. The process is then repeated on the IV and P1 to acquire the P1. P1 and P2 are then concatenated to be submitted through option 3 of the instance to acquire the flag.
+The solver does a CBC padding oracle attack. It connects and sends the option 1 which gets the encrypted secret message alongside the IV in the format of IV||C1||C2.\
+For each byte from the right to left, it forges the previous block of ciphertext to determine if a candidate plaintext value would produce a valid padding if correct. the candidates are checked with the option 2 padding check. If the padding check is valid, it will return pad = 0 80% of the time and pad = 1 20% of the time and vice versa if invalid. To deal with it, the solver checks the candidate multiple times and takes the candidate with the most pad = 0 tally and proceeds to find the next bytes until all bytes in the block has been chosen. The process is then repeated to find P1 which then is concatenated with P2, resulting in the secret message that is sent with option 3 to acquire the flag.
+
+<figure><img src="../../.gitbook/assets/{6A7D02C9-7BEB-4255-850A-08911B1BA985}.png" alt=""><figcaption></figcaption></figure>
+
+I had to run the challenge locally to find the flag
