@@ -4,9 +4,7 @@
 
 ## HCS Intersec 2025
 
-* [About](hcs-intersec-2025/about.md)
 * [Cryptography](hcs-intersec-2025/cryptography/README.md)
-  * [L3AK](hcs-intersec-2025/cryptography/l3ak.md)
   * [based](hcs-intersec-2025/cryptography/based.md)
   * [square](hcs-intersec-2025/cryptography/square.md)
   * [nothing](hcs-intersec-2025/cryptography/nothing.md)
@@ -20,5 +18,9 @@
   * [guessr 1](hcs-intersec-2025/osint/guessr-1.md)
   * [guessr 2](hcs-intersec-2025/osint/guessr-2.md)
   * [guessr 3](hcs-intersec-2025/osint/guessr-3.md)
+* [Reverse Engineering](hcs-intersec-2025/reverse-engineering/README.md)
+  * [Reverse Day 1](hcs-intersec-2025/reverse-engineering/reverse-day-1.md)
+  * [check it out](hcs-intersec-2025/reverse-engineering/check-it-out.md)
 * [Misc](hcs-intersec-2025/misc/README.md)
   * [Wordle](hcs-intersec-2025/misc/wordle.md)
+  * [toggle](hcs-intersec-2025/misc/toggle.md)
